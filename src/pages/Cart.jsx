@@ -15,11 +15,11 @@ const Cart = () => {
         <div className='flex justify-center text-5xl'>
           Cart
         </div>
-        <div className='flex items-center justify-between mt-4 '>
+        <div className='flex items-center justify-between mt-4 mobile:flex-col'>
           <button className='btn bg-white text-[#8a4af3] border-2 border-[#8a4af3] hover:bg-white'>
             Continue shopping
           </button>
-          <div className='flex underline text-lg hover:cursor-pointer'>
+          <div className='flex underline text-lg hover:cursor-pointer mobile:mt-3 mobile:mb-3'>
             <p>Items in your Cart: 3</p>
             <p className='ml-5'>Wishlist items: 0</p>
           </div>
@@ -28,9 +28,9 @@ const Cart = () => {
           </button>
         </div>
 
-        <div className='flex mt-7'>
+        <div className='flex mt-7 mobile:flex-col'>
           <div className='flex flex-col flex-1'>
-            <div className='flex w-[100%] h-auto items-center '>
+            <div className='flex w-[100%] h-auto items-center mobile:flex-col'>
               <div className='flex self-start'>
                 <img className='w-[8rem] h-[80%] rounded-lg shadow-lg hover:scale-[1.1] ease-in duration-100' src="https://cdn.shopify.com/s/files/1/0156/0327/products/MollyjoggerJonesDogTeeBackWEB21in72dpi_1024x1024.jpg?v=1629226951" alt="product_img"/>
                 <div className='desc flex flex-col ml-5 h-auto justify-between'>
@@ -49,7 +49,7 @@ const Cart = () => {
                 </p>
               </div>
               </div>
-              <div className='flex flex-col justify-center items-center flex-auto'>
+              <div className='flex flex-col justify-center items-center flex-auto mobile:mt-5'>
                 <Counter />
                 <p className='flex items-center justify-center text-4xl mt-3'>
                   <b>$70</b>
@@ -57,7 +57,7 @@ const Cart = () => {
               </div>
             </div>
             <hr className='mt-7 mb-7'/>
-            <div className='flex w-[100%] h-auto items-center '>
+            <div className='flex w-[100%] h-auto items-center mobile:flex-col'>
               <div className='flex self-start'>
                 <img className='w-[8rem] h-[80%] rounded-lg shadow-lg hover:scale-[1.1] ease-in duration-100' src="https://cdn.shopify.com/s/files/1/0156/0327/products/MollyjoggerJonesDogTeeBackWEB21in72dpi_1024x1024.jpg?v=1629226951" alt="product_img"/>
                 <div className='desc flex flex-col ml-5 h-auto justify-between'>
@@ -76,7 +76,7 @@ const Cart = () => {
                   </p>
                 </div>
               </div>
-              <div className='flex flex-col justify-center items-center flex-auto'>
+              <div className='flex flex-col justify-center items-center flex-auto mobile:mt-5'>
                 <Counter />
                 <p className='flex items-center justify-center text-4xl mt-3'>
                   <b>$70</b>

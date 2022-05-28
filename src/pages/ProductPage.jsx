@@ -14,14 +14,14 @@ const ProductPage = () => {
       <Announce />
       <Navbar />
       
-      <div className='flex justify-center'>
+      <div className='flex justify-center mobile:flex-col mobile:mt-3 mobile:p-3'>
         <div className='flex flex-1 items-center justify-center'>
           <img src="https://cdn.shopify.com/s/files/1/0156/0327/products/MollyjoggerJonesDogTeeBackWEB21in72dpi_1024x1024.jpg?v=1629226951"
                alt="product_img" className='w-[80%] h-[80%] rounded-lg shadow-lg hover:scale-[1.1] ease-in duration-300'/>
         </div>
-        <div className='flex-[1.3] flex items-start justify-items-start flex-col mt-10'>
-          <h1 className='title text-[40px]'>Creamy Hoody Original</h1>
-          <p className='pr-[4rem] text-justify mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur cum, deleniti dolores iure laboriosam magnam neque, nulla possimus quasi quo, ratione reiciendis sit ut vel velit vero voluptas voluptatibus.</p>
+        <div className='flex-[1.3] flex items-start justify-items-start flex-col mt-10 mobile:items-center'>
+          <h1 className='title text-[40px] mobile:text-[30px]'>Creamy Hoody Original</h1>
+          <p className='pr-[4rem] text-justify mt-4 mobile:p-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur cum, deleniti dolores iure laboriosam magnam neque, nulla possimus quasi quo, ratione reiciendis sit ut vel velit vero voluptas voluptatibus.</p>
           <p className='mt-7 text-3xl'>Price: <b>70$</b></p>
           <div className='flex text-2xl mt-7'>
             Colors

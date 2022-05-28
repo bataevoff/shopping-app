@@ -14,15 +14,15 @@ const Footer = () => {
   const socialMedialStyles = 'm-3 rounded-full cursor-pointer p-2 text-white'
 
   return (
-    <div className='flex items-center justify-around p-2'>
+    <div className='flex items-center justify-around p-2 mobile:flex-col mobile:items-start'>
       <div className='flex-1 fle flex-col flex-wrap p-2'>
-        <h1 className='text-[25px]'>
-          ZainK
+        <h1 className='text-[25px] mobile:text-center'>
+          Shop Chop
         </h1>
-        <p>
+        <p className='mobile:text-justify mobile:mt-2'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam at hic in, iure labore minus natus omnis optio quas reiciendis, veniam voluptates voluptatum! Aliquid amet aperiam saepe. Error, molestias.
         </p>
-        <div className='flex items-center justify-center mt-3 self-start'>
+        <div className='flex items-center justify-center mt-3 self-start mobile:items-start'>
           <div className={socialMedialStyles + ' bg-blue-700'}>
             <Facebook />
           </div>

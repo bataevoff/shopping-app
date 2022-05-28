@@ -16,15 +16,15 @@ const CategoryPage = () => {
           Men's Clothes
         </h1>
         <div className='flex items-center justify-between mt-3'>
-          <div className='flex'>
-            <p>Filter by</p>
-            <select className='ml-3 border-2 border-silver '>
+          <div className='flex mobile:flex-col'>
+            <p className='mobile:mb-4'>Filter by</p>
+            <select className='ml-3 border-2 border-silver'>
               <option selected disabled>Size</option>
               <option>Small</option>
               <option>Medium</option>
               <option>Large</option>
             </select>
-            <select className='ml-3 border-2 border-silver '>
+            <select className='ml-3 border-2 border-silver mobile:mt-3'>
               <option selected disabled>Color</option>
               <option>Yellow</option>
               <option>Blue</option>
