@@ -1,9 +1,9 @@
 import React from 'react';
 import {
+  Copyright,
   EmailOutlined,
   Facebook,
   Instagram, LocalPhoneOutlined,
-  LocationCityOutlined,
   LocationOnOutlined,
   Pinterest,
   Twitter
@@ -14,15 +14,15 @@ const Footer = () => {
   const socialMedialStyles = 'm-3 rounded-full cursor-pointer p-2 text-white'
 
   return (
-    <div className='flex items-center justify-around p-2 mobile:flex-col mobile:items-start'>
+    <div className='flex items-center justify-center p-2 mobile:flex-col mobile:items-center'>
       <div className='flex-1 fle flex-col flex-wrap p-2'>
         <h1 className='text-[25px] mobile:text-center'>
           Shop Chop
         </h1>
-        <p className='mobile:text-justify mobile:mt-2'>
+        <p className='mobile:text-justify mobile:mt-2 mobile:hidden'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam at hic in, iure labore minus natus omnis optio quas reiciendis, veniam voluptates voluptatum! Aliquid amet aperiam saepe. Error, molestias.
         </p>
-        <div className='flex items-center justify-center mt-3 self-start mobile:items-start'>
+        <div className='flex items-center justify-start mt-3 self-start mobile:items-start'>
           <div className={socialMedialStyles + ' bg-blue-700'}>
             <Facebook />
           </div>
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='flex-1 flex flex-col p-2'>
+      <div className='flex-[0.6] flex flex-col p-2'>
         <div className='flex m-3'>
           <LocationOnOutlined />
           <p className='pl-3'>Moscow</p>
@@ -49,6 +49,13 @@ const Footer = () => {
         <div className='flex m-3'>
           <EmailOutlined />
           <p className='pl-3'>email@gmail.com</p>
+        </div>
+      </div>
+      <div className='flex flex-col flex-1 mobile:hidden'>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis deserunt doloribus error, eum facilis, iste maiores minima minus neque omnis quae quisquam quos ratione rerum vel voluptatum!</div>
+        <div className='flex mt-5'>
+          <Copyright />
+          <div>Copyright 2022</div>
         </div>
       </div>
     </div>

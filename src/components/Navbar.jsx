@@ -4,7 +4,7 @@ import { Badge } from '@material-ui/core';
 
 const Navbar = () => {
 
-  const style = "text-[14px] cursor-pointer ml-[25px] mobile:ml-[10px]"
+  const style = "text-[14px] cursor-pointer ml-[25px] mobile:ml-[8px]"
 
   return (
     <div className='navbar h-[60px] shadow-md relative z-10'>
@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className='logo font-bold text-lg mobile:text-sm'>Summer Lings</div>
         </div>
         {/*right div*/}
-        <div className='right flex flex-1 items-center justify-end mobile:flex-[1.5] mobile:justify-center'>
+        <div className='right flex flex-1 items-center justify-end mobile:flex-[1.8] mobile:justify-center'>
           <div className={style}>Register</div>
           <div className={style}>Sign in</div>
           <div className={style}>
